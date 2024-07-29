@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to my website!</title>
+</head>
+<style>
+.portfolio {
+    background: var(--second-bg-color);
+}
+.portfolio h2{
+    margin-bottom: 4rem;
+}
+.Portfolio-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+.Portfolio-container .Portfolio-box{
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+    overflow: hidden;
+    display: flex;
+}
+.Portfolio-box img{
+    width: 100%;
+    transition: .5s ease;
+}
+.Portfolio-box:hover img{
+    transform: scale(1.1)
+
+}
+.Portfolio-box .Portfolio-layer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+     transition: .5s ease;
+}
+.Portfolio-box:hover .Portfolio-layer{
+    transform: translateY(0);
+}
+.Portfolio-layer h4{
+    font-size: 3rem;
+}
+.Portfolio-layer p{
+    font-size: 1.6rem;
+    margin: .3rem 0 1rem;
+}
+.Portfolio-layer a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: var(--text-color);
+    border-radius: 50%;
+}
+.Portfolio-layer a i{
+    font-size: 2rem;
+    color: var(--second-bg-color);
+}
+</style>
+<body style="background-color:black;">
+<section class="portfolio" id="portfolio">
+                <h2 style="color:white;" class="heading">Projects</h2>
+                <div class="Portfolio-container">
+                    <div class="Portfolio-box">
+                        <img src="https://th.bing.com/th/id/OIP.VbTezTNQrowk6qEQ4JrWrwHaE7?w=270&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+                        <div class="Portfolio-layer">
+                            <h4>Web design</h4>
+                            <p>Created my web design</p>
+                            <a href="D:\language converter\languageconverter\app\src\main\java\com\example\languageconverter\MainActivity.java"><i class='bx bx-link-external'></i></a>
+                        </div>
+                    </div>
+                    <div class="Portfolio-box">
+                        <img src="https://th.bing.com/th/id/OIP.R55VJdYsLjDZX8BkebC7KwHaEK?w=272&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+                        <div class="Portfolio-layer">
+                            <h4>Hospital Management</h4>
+                            <p>For smart treatment</p>
+                            <a href="D:\dk1.html"><i class='bx bx-link-external'></i></a>
+                        </div>
+                    </div>
+                    <div class="Portfolio-box">
+                        <img src="https://th.bing.com/th/id/OIP.WguUd0kwP09DX1UuQmhYVwHaE6?w=271&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+                        <div class="Portfolio-layer">
+                            <h4>Seating Management</h4>
+                            <p>To make admin's work easier</p>
+                            <a href="https://github.com/PaviTechDevloper/JDBC-FILES"><i class='bx bx-link-external'></i></a>
+                        </div>
+                    </div>
+                </div>
+        </section>
+</body>
+</html>
